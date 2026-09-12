@@ -1,0 +1,390 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+.contenedor {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+.encabezado {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.encabezado h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.encabezado p {
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   NAVEGACIÓN
+   ========================================= */
+
+.navegacion {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 1.2rem;
+    transition: background-color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+    background-color: #555;
+}
+
+/* =========================================
+   SUBMENÚ DEL CATÁLOGO
+   ========================================= */
+
+.submenu-lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    list-style: none;
+    background-color: #333;
+}
+
+.submenu:hover .submenu-lista,
+.submenu:focus-within .submenu-lista {
+    display: block;
+}
+
+.submenu-lista li {
+    width: 100%;
+}
+
+.submenu-lista a {
+    width: 100%;
+}
+
+/* =========================================
+   PRESENTACIÓN
+   ========================================= */
+
+.presentacion {
+    background-color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.presentacion h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.presentacion p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   CATÁLOGO
+   ========================================= */
+
+.catalogo {
+    padding: 4rem 0;
+}
+
+.catalogo > .contenedor > h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+/* =========================================
+   CATEGORÍAS
+   ========================================= */
+
+.categoria {
+    margin-bottom: 4rem;
+    scroll-margin-top: 90px;
+}
+
+.categoria h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+/* =========================================
+   GRID DE JUEGOS
+   ========================================= */
+
+.juegos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+/* =========================================
+   TARJETAS
+   ========================================= */
+
+.tarjeta-juego {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: minmax(150px, 35%) 1fr;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.tarjeta-juego:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18);
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.contenido-tarjeta h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.contenido-tarjeta p {
+    margin-bottom: 0.8rem;
+}
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+.boton {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+
+    padding: 0.7rem 1.1rem;
+
+    background-color: #333;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.boton:hover,
+.boton:focus {
+    background-color: #555;
+}
+
+/* =========================================
+   CONTACTO / INFORMACIÓN
+   ========================================= */
+
+.seccion-info {
+    background-color: white;
+    padding: 4rem 0;
+    margin-top: 2rem;
+    scroll-margin-top: 90px;
+}
+
+.seccion-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.seccion-info p {
+    max-width: 800px;
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   FORMULARIO
+   ========================================= */
+
+.formulario {
+    max-width: 700px;
+    margin-top: 2rem;
+
+    display: grid;
+    gap: 1.2rem;
+}
+
+.campo {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    padding: 0.8rem;
+
+    border: 1px solid #999;
+    border-radius: 5px;
+
+    font: inherit;
+    background-color: #fff;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 3px solid #aaa;
+    border-color: #333;
+}
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+.pie {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* =========================================
+   RESPONSIVE - TABLETS
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .juegos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-juego {
+        grid-template-columns: 220px 1fr;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - CELULARES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .encabezado h1 {
+        font-size: 2rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .menu > li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .submenu-lista {
+        position: static;
+        width: 100%;
+    }
+
+    .tarjeta-juego {
+        grid-template-columns: 1fr;
+    }
+
+    .portada img {
+        height: 260px;
+        min-height: 0;
+    }
+
+    .contenido-tarjeta {
+        padding: 1.2rem;
+    }
+
+    .presentacion,
+    .catalogo,
+    .seccion-info {
+        padding: 3rem 0;
+    }
+}

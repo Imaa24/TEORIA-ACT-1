@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Ludoteca con reseñas de juegos de mesa organizados por categorías: estrategia, cartas y familiares.">
+    <meta name="keywords"
+          content="juegos de mesa, ludoteca, reseñas, estrategia, cartas, familiares">
+    <meta name="author"
+          content="Ludoteca IA">
+
+    <title>Ludoteca - Reseñas de Juegos de Mesa</title>
+
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>Ludoteca</h1>
+            <p>Reseñas y manuales de nuestros juegos de mesa</p>
+        </div>
+    </header>
+
+    <nav class="navegacion" aria-label="Navegación principal">
+        <div class="contenedor">
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+
+                <li class="submenu">
+                    <a href="#catalogo">Catálogo</a>
+                    <ul class="submenu-lista">
+                        <li><a href="#estrategia">Estrategia</a></li>
+                        <li><a href="#cartas">Cartas</a></li>
+                        <li><a href="#familiares">Familiares</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#mantenimiento">Quién mantiene el sitio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="inicio">
+
+        <section class="presentacion">
+            <div class="contenedor">
+                <h2>Bienvenidos a nuestra ludoteca</h2>
+
+                <p>
+                    En esta página encontrarás reseñas de algunos de nuestros
+                    juegos de mesa favoritos, organizados según su categoría.
+                    También podrás consultar el manual de cada juego.
+                </p>
+            </div>
+        </section>
+
+        <section id="catalogo" class="catalogo">
+            <div class="contenedor">
+
+                <h2>Catálogo de juegos</h2>
+
+                <!-- ========================= -->
+                <!-- CATEGORÍA ESTRATEGIA       -->
+                <!-- ========================= -->
+
+                <section id="estrategia" class="categoria">
+
+                    <h3>Estrategia</h3>
+
+                    <div class="juegos-grid">
+
+                        <article class="tarjeta-juego">
+
+                            <figure class="portada">
+                                <img
+                                    src="imagenes/catan.png"
+                                    alt="Portada del juego Catan"
+                                >
+                            </figure>
+
+                            <div class="contenido-tarjeta">
+                                <h4>Catan</h4>
+
+                                <p>
+                                    Un clásico de los juegos de estrategia y
+                                    negociación en el que los jugadores deben
+                                    conseguir recursos para construir carreteras,
+                                    poblados y ciudades.
+                                </p>
+
+                                <p>
+                                    La interacción entre jugadores y la
+                                    administración de recursos hacen que cada
+                                    partida sea diferente.
+                                </p>
+
+                                <a
+                                    class="boton"
+                                    href="reglamentos/Catan-reglas.pdf"
+                                    target="_blank"
+                                >
+                                    Consultar manual
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="tarjeta-juego">
+
+                            <figure class="portada">
+                                <img
+                                    src="imagenes/Terraforming-Mars.png"
+                                    alt="Portada del juego Terraforming Mars"
+                                >
+                            </figure>
+
+                            <div class="contenido-tarjeta">
+                                <h4>Terraforming Mars</h4>
+
+                                <p>
+                                    Los jugadores representan corporaciones
+                                    que trabajan para transformar Marte en un
+                                    planeta habitable.
+                                </p>
+
+                                <p>
+                                    Destaca por su profundidad estratégica,
+                                    gestión de recursos y gran cantidad de
+                                    decisiones durante la partida.
+                                </p>
+
+                                <a
+                                    class="boton"
+                                    href="reglamentos/Terraforming-mars.pdf"
+                                    target="_blank"
+                                >
+                                    Consultar manual
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- ========================= -->
+                <!-- CATEGORÍA CARTAS           -->
+                <!-- ========================= -->
+
+                <section id="cartas" class="categoria">
+
+                    <h3>Cartas</h3>
+
+                    <div class="juegos-grid">
+
+                        <article class="tarjeta-juego">
+
+                            <figure class="portada">
+                                <img
+                                    src="imagenes/uno.jpg"
+                                    alt="Portada del juego UNO"
+                                >
+                            </figure>
+
+                            <div class="contenido-tarjeta">
+                                <h4>UNO</h4>
+
+                                <p>
+                                    Juego de cartas rápido y sencillo en el que
+                                    los jugadores deben deshacerse de todas sus
+                                    cartas antes que los demás.
+                                </p>
+
+                                <p>
+                                    Sus reglas simples permiten que puedan
+                                    participar jugadores de prácticamente
+                                    cualquier edad.
+                                </p>
+
+                                <a
+                                    class="boton"
+                                    href="reglamentos/UNO-reglas.pdf"
+                                    target="_blank"
+                                >
+                                    Consultar manual
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="tarjeta-juego">
+
+                            <figure class="portada">
+                                <img
+                                    src="imagenes/exploding-kittens.jpg"
+                                    alt="Portada del juego Exploding Kittens"
+                                >
+                            </figure>
+
+                            <div class="contenido-tarjeta">
+                                <h4>Exploding Kittens</h4>
+
+                                <p>
+                                    Un juego de cartas rápido y entretenido
+                                    basado en el riesgo, la estrategia y
+                                    diferentes cartas de acción.
+                                </p>
+
+                                <p>
+                                    Las partidas son dinámicas y funcionan
+                                    especialmente bien en grupos de amigos.
+                                </p>
+
+                                <a
+                                    class="boton"
+                                    href="reglamentos/reglament-exploding-kittens.pdf"
+                                    target="_blank"
+                                >
+                                    Consultar manual
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- ========================= -->
+                <!-- CATEGORÍA FAMILIARES       -->
+                <!-- ========================= -->
+
+                <section id="familiares" class="categoria">
+
+                    <h3>Familiares</h3>
+
+                    <div class="juegos-grid">
+
+                        <article class="tarjeta-juego">
+
+                            <figure class="portada">
+                                <img
+                                    src="imagenes/carcassonne.jpg"
+                                    alt="Portada del juego Carcassonne"
+                                >
+                            </figure>
+
+                            <div class="contenido-tarjeta">
+                                <h4>Carcassonne</h4>
+
+                                <p>
+                                    Juego de colocación de losetas en el que
+                                    cada participante construye ciudades,
+                                    caminos y monasterios.
+                                </p>
+
+                                <p>
+                                    Sus reglas son fáciles de aprender,
+                                    aunque ofrece decisiones tácticas
+                                    interesantes durante la partida.
+                                </p>
+
+                                <a
+                                    class="boton"
+                                    href="reglamentos/reglas-carcassonne-zacatrus.pdf"
+                                    target="_blank"
+                                >
+                                    Consultar manual
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="tarjeta-juego">
+
+                            <figure class="portada">
+                                <img
+                                    src="imagenes/dixit.webp"
+                                    alt="Portada del juego Dixit"
+                                >
+                            </figure>
+
+                            <div class="contenido-tarjeta">
+                                <h4>Dixit</h4>
+
+                                <p>
+                                    Un juego de creatividad e imaginación en
+                                    el que los participantes utilizan cartas
+                                    ilustradas para crear asociaciones e
+                                    historias.
+                                </p>
+
+                                <p>
+                                    Es especialmente adecuado para jugar en
+                                    familia gracias a sus reglas accesibles.
+                                </p>
+
+                                <a
+                                    class="boton"
+                                    href="reglamentos/dixit-reglas-zacatrus.pdf"
+                                    target="_blank"
+                                >
+                                    Consultar manual
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- CONTACTO                   -->
+        <!-- ========================= -->
+
+        <section id="contacto" class="seccion-info">
+            <div class="contenedor">
+
+                <h2>Información de contacto</h2>
+
+                <p>
+                    Puedes utilizar el siguiente formulario para ponerte
+                    en contacto con nosotros.
+                </p>
+
+                <form class="formulario" action="#" method="post">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="boton">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- MANTENIMIENTO              -->
+        <!-- ========================= -->
+
+        <section id="mantenimiento" class="seccion-info">
+            <div class="contenedor">
+
+                <h2>Quién mantiene el sitio</h2>
+
+                <p>
+                    Este sitio es mantenido por el equipo responsable de la
+                    ludoteca con el objetivo de organizar información,
+                    reseñas y manuales de los juegos disponibles.
+                </p>
+
+                <p>
+                    El contenido se actualiza periódicamente para mantener
+                    el catálogo organizado y facilitar la consulta de los
+                    visitantes.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>&copy; 2026 Ludoteca. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
